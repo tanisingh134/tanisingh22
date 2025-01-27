@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int i=0;
+    string na;
+    int qn;
+    float pr;
+    while(i!=-1){
+        int n;
+        cin>>n;
+        if(n==1){
+            cin>>na;
+            cin>>qn;
+            cin>>pr;
+        }
+        if(n==2){
+            cout<<na<<endl;
+            int up;
+            cin>>up;
+            qn=up;
+        }
+        if(n==3){
+            int bill=qn*pr;
+            cout<<bill<<endl;
+        }
+        if(n==4){
+            cout<<"Exit"<<endl;
+            i=-1;
+        }
+        if(n==5){
+            cout<<"Invalid"<<endl;
+        }
+    }
+    return 0;
+}
